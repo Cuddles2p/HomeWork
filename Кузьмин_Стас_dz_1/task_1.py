@@ -18,13 +18,12 @@ elif duration>= hours and duration<days:
     my_minute= duration// minuts
     my_second = duration% minuts
     print('{} часов {} мин {} сек '.format(my_hour,my_minute,my_second))
-elif duration >= days:
-    my_days = duration // days
-    duration = duration % days
+elif duration>=days :
+    my_days= duration//days
+    duration=duration% days
     my_hour = duration // hours
     duration = duration % hours
     my_minute = duration // minuts
     my_second = duration % minuts
-    if duration % days ==0:
-        print('{} часов {} мин {} сек '.format( my_hour, my_minute, my_second))
-    print('{} дней {} часов {} мин {} сек '.format(my_days, my_hour, my_minute, my_second))
+    print('{} дней {} часов {} мин {} сек '.format(my_days,my_hour, my_minute, my_second))
+
